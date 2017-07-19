@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width">
   <meta name="description" content="تیکام یه پیام‌رسان تیمیه که سعی داره با سازماندهی و متمرکز کردن مکالمه‌های کاری شما، بهره‌وری تیمتون رو افزایش بده تا بتونید سریع‌تر تصمیم بگیرید و جلسات غیرضروری کم‌تری داشته باشید.">
   <meta name="keywords" content="پیام رسان تیمی, پیام رسان سازمانی, پیام رسان کاری, ارتباط تیمی">
-  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.rtl.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -16,50 +16,47 @@
 
 <body>
   <div class="bs-example">
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-          </button>
+    <div class="header clearfix">
+      <div>
+        <ul class="">
+          <li>
+            <img src="img/logo.png" alt="تیکام"> تیکام: پیام‌رسان تیمی
+          </li>
+        </ul>
+        <div class="menu-toggle">
+          <div id="nav-icon2">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
-        <!-- Collection of nav links and other content for toggling -->
-        <div id="navbarCollapse" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="product">محصول</a></li>
-            <li><a href="pricing">تعرفه‌ها</a></li>
-            <li><a href="about">درباره‌ی ما</a></li>
-            <li><a href="teams/find">ورود</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right profile">
-            <li>
-              تیکام: پیام‌رسان تیمی
-              <img src="img/logo.png" alt="تیکام">
-            </li>
-          </ul>
-        </div>
+        <ul class="h-l mob-menu">
+          <li><a href="product">محصول</a></li>
+          <li><a href="pricing">تعرفه‌ها</a></li>
+          <li><a href="about">درباره‌ی ما</a></li>
+          <li><a href="teams/find">ورود</a></li>
+        </ul>
       </div>
-    </nav>
+    </div>
   </div>
   <div class="container-fluid s-1">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
+          <img src="img/ill_1.png" class="img-responsive center-block">
+        </div>
+        <div class="col-md-6">
           <h1>ارتباط تیمی، راحت و مطمئن</h1>
           <p>بحث کنید، ایده به اشتراک بگذارید و سریع تصمیم بگیرید.</p>
           <div class="row">
-            <div class="col-xs-12 sign">
-              <input type="submit" name="sign-up" value="تیم بساز!">
+            <div class="col-xs-12 sign align-center">
               <input type="text" name="text" placeholder="ایمیل...">
+              <input type="submit" name="sign-up" value="تیم بساز!">
             </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <img src="img/ill_1.png" class="img-responsive center-block">
         </div>
       </div>
     </div>
@@ -75,12 +72,12 @@
   <div class="container f-1">
     <div class="row">
       <div class="col-md-6">
-        <img src="img/ill_2.png" class="img-responsive">
-      </div>
-      <div class="col-md-6">
         <h3>پیام‌رسانی</h3>
         <p>صحبت‌ها و گفتگوهای کاری رو در قالب گروه‌های عمومی و خصوصی و مکالمه‌های شخصی دسته‌بندی کنید و با هم‌تیمی‌هاتون در میون بزارید.</p>
-        <button class="center-block">بیشتر</button>
+        <button class="center-block btn">بیشتر</button>
+      </div>
+      <div class="col-md-6">
+        <img src="img/ill_2.png" class="img-responsive">
       </div>
     </div>
   </div>
@@ -88,12 +85,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
+          <img src="img/ill_3.png" class="img-responsive">
+        </div>
+        <div class="col-md-6">
           <h3>به اشتراک‌گذاری فایل</h3>
           <p>متناسب با موضوع هر گروه، فایل‌هاتون رو به اشتراک بزارید تا همه‌ی اعضای تیم به‌راحتی بهشون دسترسی داشته باشن.</p>
           <button class="center-block">بیشتر</button>
-        </div>
-        <div class="col-md-6">
-          <img src="img/ill_3.png" class="img-responsive">
         </div>
       </div>
     </div>
@@ -102,12 +99,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <img src="img/ill_4.png" class="img-responsive center-block">
-        </div>
-        <div class="col-md-6">
           <h3>جستجو</h3>
           <p>پیام‌ها و فایل‌هاتون رو با جستجوی کلیدواژه‌ی موردنظرتون پیدا کنید و نگران گم شدن اونا نباشید.</p>
           <button class="center-block">بیشتر</button>
+        </div>
+        <div class="col-md-6">
+          <img src="img/ill_4.png" class="img-responsive center-block">
         </div>
       </div>
 
@@ -133,11 +130,11 @@
       <h2>همین حالا شروع کنید.</h2>
       <div class="row">
         <div class="col-md-3"></div>
-        <div class="col-md-2 sign">
-          <input type="submit" name="sign-up" value="تیم بساز!">
-        </div>
         <div class="col-md-4 sign">
           <input type="text" name="text" placeholder="ایمیل...">
+        </div>
+        <div class="col-md-2 sign">
+          <input type="submit" name="sign-up" value="تیم بساز!">
         </div>
         <div class="col-md-3"></div>
       </div>
@@ -173,5 +170,14 @@
     </div>
   </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script>
+  $('.menu-toggle').click(function() {
+    $('.mob-menu').toggleClass('open')
+  })
+  $('#nav-icon2').click(function(){
+		$(this).toggleClass('open');
+	});
+</script>
 
 </html>
