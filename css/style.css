@@ -168,7 +168,7 @@ ul, li {
   color: #3b505a;
 }
 
-.s-1 .sign input[type="text"] {
+.s-1 .sign input[type="email"] {
   border: none;
   width: 40%;
   background: #ffffff;
@@ -325,7 +325,7 @@ ul, li {
   color: #3b505a;
 }
 
-.s-5 .sign input[type="text"] {
+.s-5 .sign input[type="email"] {
   border: none;
   width: 90%;
   margin-right: 10%;

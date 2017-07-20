@@ -2,10 +2,12 @@
 <html lang="en">
 
 <head>
-  <title>تیکام: پیام‌رسان تیمی</title>
+  <title>تیکام | پیام‌رسان تیمی</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width">
+  <meta name="theme-color" content="#24A772">
+  <link rel="shortcut icon" href="favicon.ico" />
   <meta name="description" content="تیکام یه پیام‌رسان تیمیه که سعی داره با سازماندهی و متمرکز کردن مکالمه‌های کاری شما، بهره‌وری تیمتون رو افزایش بده تا بتونید سریع‌تر تصمیم بگیرید و جلسات غیرضروری کم‌تری داشته باشید.">
   <meta name="keywords" content="پیام رسان تیمی, پیام رسان سازمانی, پیام رسان کاری, ارتباط تیمی">
   <link rel="stylesheet" href="css/bootstrap.rtl.css">
@@ -52,10 +54,12 @@
           <h1>ارتباط تیمی، راحت و مطمئن</h1>
           <p>بحث کنید، ایده به اشتراک بگذارید و سریع تصمیم بگیرید.</p>
           <div class="row">
-            <div class="col-xs-12 sign align-center">
-              <input type="text" name="text" placeholder="ایمیل...">
-              <input type="submit" name="sign-up" value="تیم بساز!">
-            </div>
+            <form id="createTeamForm" action="/teams/confirm/send" method="post" novalidate>
+              <div class="col-xs-12 sign align-center">
+                <input type="email" id="email" name="email" placeholder="ایمیلت رو وارد کن" />
+                <input type="submit" value="تیم بساز!" />
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -129,14 +133,16 @@
     <div class="container">
       <h2>همین حالا شروع کنید.</h2>
       <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-4 sign">
-          <input type="text" name="text" placeholder="ایمیل...">
-        </div>
-        <div class="col-md-2 sign">
-          <input type="submit" name="sign-up" value="تیم بساز!">
-        </div>
-        <div class="col-md-3"></div>
+        <form id="createTeamForm‌Bottom" action="/teams/confirm/send" method="post" novalidate>
+          <div class="col-md-3"></div>
+          <div class="col-md-4 sign">
+            <input type="email" id="emailBottom" name="email" placeholder="ایمیلت رو وارد کن" />
+          </div>
+          <div class="col-md-2 sign">
+            <input type="submit" name="sign-up" value="تیم بساز!">
+          </div>
+          <div class="col-md-3"></div>
+        </form>
       </div>
     </div>
   </div>
@@ -175,9 +181,70 @@
   $('.menu-toggle').click(function() {
     $('.mob-menu').toggleClass('open')
   })
-  $('#nav-icon2').click(function(){
-		$(this).toggleClass('open');
-	});
+  $('#nav-icon2').click(function() {
+    $(this).toggleClass('open');
+  });
+</script>
+<script>
+  var email = document.getElementById('email');
+  var form = document.getElementById('createTeamForm');
+  var formBottom = document.getElementById('createTeamForm‌Bottom');
+  var emailBottom = document.getElementById('emailBottom');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    if (email.value && validateEmail(email.value)) {
+      form.submit();
+    } else {
+      email.value = '';
+    }
+  });
+
+  formBottom.addEventListener('submit', function(event) {
+    event.preventDefault();
+    if (emailBottom.value && validateEmail(emailBottom.value)) {
+      formBottom.submit();
+    } else {
+      emailBottom.value = '';
+    }
+  });
+
+  function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
+</script>
+<script>
+  if (window.location.origin === 'http://tecom.me') {
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-91549437-1', 'auto');
+    ga('send', 'pageview');
+
+    var _qevents = _qevents || [];
+    (function() {
+      var elem = document.createElement('script');
+      elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+      elem.async = true;
+      elem.type = "text/javascript";
+      var scpt = document.getElementsByTagName('script')[0];
+      scpt.parentNode.insertBefore(elem, scpt);
+    })();
+    _qevents.push({
+      qacct: "p-bW-ygNu_RkgPt"
+    });
+
+    console.log('Analytics Loaded.');
+  }
 </script>
 
 </html>
