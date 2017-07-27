@@ -435,9 +435,9 @@ p {
 }
 .as-3 p {
   text-align: right;
-  line-height: 30px;
+  /*line-height: 30px;
   color: #838ca1;
-  padding: 50px 0;
+  padding: 50px 0;*/
 }
 
 .as-3 img{
@@ -445,6 +445,14 @@ p {
   width: 150px;
   height: 150px;
   float: left;
+}
+.as-3 a img{
+  height: 20px;
+  width: 20px;
+  border-radius: 0;
+  float: none;
+  margin-top: 5px;
+  margin-left: 5px;
 }
 
 .as-3 span {
