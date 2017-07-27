@@ -63,7 +63,7 @@ body, html {
 
 .header {
   padding: 8px 32px;
-  background: #21a670;
+  background: #1e9363;
   position: fixed;
   top: 0;
   left: 0;
@@ -160,7 +160,7 @@ ul, li {
 
 .s-1 .sign input[type="submit"] {
   border: none;
-  width: 30%;
+  width: 20%;
   border-radius: 50px;
   padding: 10px 15px;
   background: #ffffff;
@@ -173,7 +173,7 @@ p {
 
 .s-1 .sign input[type="email"] {
   border: none;
-  width: 40%;
+  width: 50%;
   background: #ffffff;
   border-radius: 50px;
   padding: 10px 15px;
@@ -200,6 +200,7 @@ p {
   color: #838ca1;
   text-align: center;
   line-height: 30px;
+  margin: 0;
 }
 
 .f-1 h3 {
@@ -432,6 +433,7 @@ p {
   border-radius: 50%;
   width: 150px;
   height: 150px;
+  float: left;
 }
 
 .as-3 span {
@@ -920,6 +922,10 @@ a, a:link, a:active, a:visited, a:focus {
   .menu-toggle {
     display: block;
   }
+}
+
+.s-1 h1.no-margin-top{
+  margin-top: 0;
 }
 
 .clearfix:after {
