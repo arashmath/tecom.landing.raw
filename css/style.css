@@ -35,7 +35,6 @@ h1, h2, h3, h4, h5, h6 {
 * {
   font-family: 'Iran-sans';
   font-weight: 200;
-  font-size: 18px;
   padding: 0;
   margin: 0;
   direction: rtl;
@@ -139,7 +138,7 @@ ul, li {
 
 .s-1 img {
   margin-top: 80px;
-  width: 80%;
+  /*width: 80%;*/
 }
 
 .s-1 h1 {
@@ -168,12 +167,16 @@ ul, li {
   color: #3b505a;
 }
 
+p {
+  font-size: 16px;
+}
+
 .s-1 .sign input[type="email"] {
   border: none;
   width: 40%;
   background: #ffffff;
   border-radius: 50px;
-  padding: 12px 15px;
+  padding: 10px 15px;
   margin-left: 15px;
 }
 
@@ -212,15 +215,15 @@ ul, li {
   color: #838ca1;
 }
 
-.f-1 button {
+.f-1 a {
   margin-top: 40px;
+  text-align: center;
   background: #21a670;
-  border-radius: 50px;
   border: none;
+  border-radius: 50px;
   color: #ffffff;
-  font-weight: bold;
-  width: 30%;
-  padding: 15px 0;
+  font-weight: 200;
+  padding: 10px 40px;
 }
 
 .s-3 {
@@ -240,15 +243,15 @@ ul, li {
   color: #ffffff;
 }
 
-.s-3 button {
+.s-3 a {
   margin-top: 40px;
+  text-align: center;
   background: #ffffff;
   border: none;
   border-radius: 50px;
+  font-weight: 200;
+  padding: 10px 40px;
   color: #3b505a;
-  font-weight: bold;
-  width: 30%;
-  padding: 15px 0;
 }
 
 .f-2 {
@@ -268,20 +271,20 @@ ul, li {
   color: #838ca1;
 }
 
-.f-2 button {
+.f-2 a {
   margin-top: 40px;
+  text-align: center;
   background: #21a670;
   border: none;
   border-radius: 50px;
   color: #ffffff;
-  font-weight: bold;
-  width: 30%;
-  padding: 15px 0;
+  font-weight: 200;
+  padding: 10px 40px;
 }
 
 .f-2 img {
   margin-top: 80px;
-  width: 80%;
+  /*width: 80%;*/
 }
 
 .s-4 h2 {
@@ -331,7 +334,7 @@ ul, li {
   margin-right: 10%;
   background: #ffffff;
   border-radius: 50px;
-  padding: 12px 15px;
+  padding: 10px 15px;
   margin-left: 15px;
 }
 
@@ -347,16 +350,22 @@ ul, li {
 
 .s-6 h4 {
   margin: 40px 0 20px 0;
-  color: #838ca1;
+  color: #8c909a;
+  font-weight: 300;
 }
 
 .s-6 ul li {
   line-height: 30px;
   list-style-type: none;
+  color: #666;
+}
+
+.s-6 ul li a{
 }
 
 .s-6 ul li img {
-  margin-top: 20px;
+  margin-top: 0px;
+  height: 22px;
 }
 
 .s-6 ul {
@@ -405,13 +414,24 @@ ul, li {
 
 .as-3 h3 {
   text-align: right;
+  padding-top: 30px;
+  color: #666;
 }
 
+.as-3 span {
+  color: #888
+}
 .as-3 p {
   text-align: right;
   line-height: 30px;
   color: #838ca1;
   padding: 50px 0;
+}
+
+.as-3 img{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
 }
 
 .as-3 span {
@@ -569,7 +589,7 @@ ul, li {
   color: #838ca1;
 }
 
-.pf-2 button {
+.pf-2 a {
   margin-top: 40px;
   background: #5f84e9;
   border: none;
@@ -759,9 +779,9 @@ a, a:link, a:active, a:visited, a:focus {
 }
 
 .menu-toggle {
-position: absolute;
-left: 10px;
-top: 10px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
   transform: scale(0.3);
   -moz-transform: scale(0.3);
   -webkit-transform: scale(0.3);
@@ -864,19 +884,22 @@ top: 10px;
   left: calc(50% - 5px);
   top: 29px;
 }
-.menu-toggle{
+
+.menu-toggle {
   display: none;
   transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
 }
-.header, .header *{
+
+.header, .header * {
   transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
 }
+
 @media only screen and (max-width: 767px) {
   .header ul.mob-menu {
     opacity: 0;
@@ -890,11 +913,11 @@ top: 10px;
     opacity: 1;
     visibility: visible;
   }
-  .header ul.mob-menu.open.h-l li{
+  .header ul.mob-menu.open.h-l li {
     display: block;
     width: 100%;
   }
-  .menu-toggle{
+  .menu-toggle {
     display: block;
   }
 }
