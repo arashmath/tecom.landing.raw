@@ -548,12 +548,15 @@ p {
 
 /*pricing*/
 
+.s-1.pricing{
+  margin-top: 0;
+  padding-top: 50px;
+}
+
 .plan {
-  margin-bottom: 50px;
-  margin-left: 6%;
-  margin-top: 50px;
+  margin: 50px 0px;
   border-radius: 5px;
-  padding-bottom: 20px;
+  padding: 20px 15px;
   background: #ffffff;
 }
 
@@ -564,6 +567,12 @@ p {
 
 .plan .overlay {
   background: rgba(0, 0, 0, 0.8);
+}
+
+.center-block{
+  display: block;
+  margin: auto;
+  width: auto;
 }
 
 .overlay-txt {
@@ -695,7 +704,7 @@ p {
 }
 
 .contact-us {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .contact-us h3 {
