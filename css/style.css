@@ -1005,6 +1005,9 @@ a, a:link, a:active, a:visited, a:focus {
   .menu-toggle {
     display: block;
   }
+  .s-1 h1{
+    margin-top: 20px;
+  }
 }
 
 .s-1 h1.no-margin-top {
