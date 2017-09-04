@@ -693,14 +693,20 @@ p {
 .faq span {
   display: block;
   text-align: right;
-  font-size: 32px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  margin-right: 0;
 }
 
 .faq p {
   line-height: 30px;
-  color: #838ca1;
+  color: #5A5D64;
   text-align: right;
+}
+
+.faq a {
+  color: #1A0DBB;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
 }
 
 .contact-us {
