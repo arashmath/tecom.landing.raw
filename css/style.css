@@ -73,6 +73,11 @@ body, html {
   box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.05);
 }
 
+.header-logo {
+  font-size: 32px;
+  font-weight: 400;
+}
+
 ul, li {
   list-style: none;
   margin: 0;
@@ -165,6 +170,14 @@ ul, li {
   padding: 10px 15px;
   background: #ffffff;
   color: #3b505a;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.sign span {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 200;
 }
 
 p {
@@ -254,7 +267,9 @@ p {
   padding: 10px 40px;
   color: #3b505a;
 }
-
+.f-1 {
+  border-bottom: 1px solid #ebebeb;
+}
 .f-2 {
   border-bottom: 1px solid #ebebeb;
 }
@@ -435,7 +450,8 @@ p {
 }
 
 .as-3 span {
-  color: #888
+  color: #888;
+  margin: 0;
 }
 
 .as-3 p {
@@ -1050,6 +1066,23 @@ a, a:link, a:active, a:visited, a:focus {
     width: 100%;
     margin-right: 0%;
     margin-left: 0px;
+  }
+
+  .part {
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 20px;
+  }
+
+  .part .row {
+    display: block;
+  }
+
+  .as-3 img {
+    float: none;
+  }
+
+  .as-3 h3 {
+    padding-top: 0;
   }
 }
 
