@@ -258,6 +258,10 @@ p {
 .f-2 {
   border-bottom: 1px solid #ebebeb;
 }
+.pad-bot-100{
+  padding-bottom: 100px;
+}
+
 
 .f-2 h3 {
   margin-top: 100px;
@@ -1011,8 +1015,41 @@ a, a:link, a:active, a:visited, a:focus {
   .menu-toggle {
     display: block;
   }
-  .s-1 h1{
+  .s-1 h1, .s-3 h3{
     margin-top: 20px;
+  }
+  .f-1 h3{
+    margin-top: 30px;
+  }
+  .f-2 h3{
+    margin-top: 0
+  }
+  .f-2, .pad-bot-100{
+    padding-bottom: 80px;
+  }
+  .s-3{
+    padding-bottom: 80px;
+  }
+  a.center-block{
+    margin-top: 30px;
+    display: block;
+  }
+  .s-5{
+    padding-bottom: 30px;
+  }
+  .sign{
+    margin: 20px 0;
+  }
+  .s-5 .sign input[type="submit"] {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .s-5 .sign input[type="email"] {
+    border: none;
+    width: 100%;
+    margin-right: 0%;
+    margin-left: 0px;
   }
 }
 
